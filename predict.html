@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Stocks - HASH-Stocks_AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">HASH-Stocks_AI</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trade.html">Trade</a></li>
+                <li><a href="predict.html">Predict</a></li>
+                <li><a href="index.html#about" onclick="toggleAboutUs()">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Predict Section -->
+    <section id="predict" class="fullscreen-section">
+        <h2>Predict Stocks</h2>
+        <form onsubmit="predictStock(event)">
+            <label for="predict-symbol">Stock Symbol:</label>
+            <input type="text" id="predict-symbol" required>
+            <label for="predict-date">Prediction Date:</label>
+            <input type="date" id="predict-date" required>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="prediction-result"></div>
+        <canvas id="prediction-chart"></canvas>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 HASH-Stocks_AI. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
