@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HASH-Stocks_AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">HASH-Stocks_AI</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trade.html">Trade</a></li>
+                <li><a href="predict.html">Predict</a></li>
+                <li><a href="#about" onclick="toggleAboutUs()">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Empower Your Trades with AI-Driven Predictions</h1>
+        <p>Leverage advanced AI to make smarter trading decisions.</p>
+        <div class="cta-buttons">
+            <a href="trade.html" class="btn">Trade Now</a>
+            <a href="predict.html" class="btn">Predict Stocks</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us" style="display: none;">
+        <h2>About Us</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Data Scientist</p>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Team Member 3">
+                <h3>Mike Johnson</h3>
+                <p>AI Specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 HASH-Stocks_AI. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
