@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Background Video */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: #00b894;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: black;
+    animation: fadeIn 2s ease-in-out;
+    flex: 1;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.hero .cta-buttons .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background: #00b894;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.hero .cta-buttons .btn:hover {
+    background: #019374;
+}
+
+/* Fullscreen Section */
+.fullscreen-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 30px 20px; /* Reduced padding */
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+.fullscreen-section h2 {
+    font-size: 2rem; /* Reduced font size */
+    margin-bottom: 20px;
+}
+.fullscreen-section input[type="text"], .fullscreen-section input[type="date"] {
+    padding: 10px; /* Reduced padding */
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem; /* Reduced font size */
+}
+.fullscreen-section button {
+    padding: 10px 20px; /* Reduced padding */
+    margin: 10px;
+    background: #00b894;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* Reduced font size */
+    transition: background 0.3s;
+}
+.fullscreen-section button:hover {
+    background: #019374;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: black;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+footer p {
+    margin: 0;
+}
+footer .social-media {
+    margin-top: 10px;
+}
+footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+footer .social-media a:hover {
+    color: #00b894;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.about-us .team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.about-us .team-member {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.about-us .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.about-us .team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.about-us .team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .team .team-members {
+        grid-template-columns: 1fr;
+    }
+}
