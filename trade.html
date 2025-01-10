@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Stocks - HASH-Stocks_AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">HASH-Stocks_AI</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trade.html">Trade</a></li>
+                <li><a href="predict.html">Predict</a></li>
+                <li><a href="index.html#about" onclick="toggleAboutUs()">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Trade Section -->
+    <section id="trade" class="fullscreen-section">
+        <h2>Trade Stocks</h2>
+        <input type="text" id="stock-symbol" placeholder="Enter Stock Symbol">
+        <button onclick="tradeStock()">Trade</button>
+        <div id="trade-result"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 HASH-Stocks_AI. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
